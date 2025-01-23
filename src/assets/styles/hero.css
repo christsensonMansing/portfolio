@@ -1,0 +1,83 @@
+.nav-bar{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgba(37, 37, 37, 0);
+    font-family: 'Poppins', sans-serif;
+    padding: 1.8em 3em;
+}
+
+.nav-bar h1{
+    margin-right: auto;
+}
+
+.nav-bar a{
+    padding: 0px 1em;
+    transition: .15s ease;
+}
+
+.nav-bar a:hover{
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+
+.hero-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-inline: 5em;
+}
+
+.hero-container h1{
+    font-size: 3.4rem;
+}
+
+.hero-container h1:first-of-type{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.name{
+    color: #c4b681;
+}
+
+.hero-p{
+    color: rgb(230, 224, 200);
+    line-height: 1.6em;
+    margin-top: 1em;
+}
+
+.hero-container button:first-of-type{
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: larger;
+    background-color: #c4b681;
+    color: white;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-right: 1em;
+    transition: .15s ease;
+}
+
+.hero-container button:last-of-type{
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: larger;
+    background: none;
+    border: 1px #c4b681 solid;
+    color: #c4b681;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.hero-container button:first-of-type:hover{
+    cursor: pointer;
+    background-color: #847a57;
+    color: white;
+}
+
+

@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('./assets/background.avif');
+
+}
+
+#root{
+  background-color: rgba(0, 0, 0, 0.735);
+  height: 100vh !important;
+}

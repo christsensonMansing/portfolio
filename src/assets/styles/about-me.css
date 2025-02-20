@@ -1,0 +1,52 @@
+
+
+.container{
+  display: flex;
+  flex-direction: row; 
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  width: 80%; 
+  max-width: 50%; /* Prevent it from stretching too much */
+  margin: 0 auto;
+  padding-top: 5em;
+}
+
+.image-container{
+  min-width: 35%;
+  max-height: fit-content;
+  margin-right: 2.5em;
+  overflow: hidden; /* Hide the zoomed-in parts */
+  display: inline-block;
+  border-radius: 10px;
+  border: 1.5px solid #c4b681;
+}
+
+.image-container img{
+  max-width: 100%;
+  padding: .5em;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container img:hover{
+  transform: scale(1.093);
+  cursor: pointer;
+}
+
+.right-side{
+  padding-top: 2em;
+}
+
+h1 span{
+  color: red  ;
+}
+
+hr{
+  border: 1.5px solid #7e7452;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.right-side p{
+  line-height: 2.1em;
+}

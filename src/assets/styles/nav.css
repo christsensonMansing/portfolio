@@ -1,0 +1,40 @@
+.nav-bar{
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: rgba(37, 37, 37, 0);
+  font-family: 'Poppins', sans-serif;
+  padding: 1.8em 3em;
+}
+
+.website-name{
+  margin-right: auto;
+}
+
+.nav-bar .website-name:hover{
+  text-decoration: none; 
+}
+
+
+
+.nav-bar a {
+  padding: 0px 1em;
+  color: white;
+  text-decoration: none;
+  transition: text-underline-offset 0.3s ease-in-out, text-decoration-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+  text-decoration-color: #c4b681;
+  text-underline-offset: 4px;
+  color: #c4b681; /* Optional: Change text color */
+  cursor: pointer;
+}
+
+.nav-link.active {
+  color: #c4b681; /* Highlights the active page */
+  text-decoration: underline;
+  text-decoration-color: #c4b681;
+  text-underline-offset: 4px;
+}

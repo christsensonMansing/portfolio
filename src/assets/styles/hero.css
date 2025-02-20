@@ -1,25 +1,3 @@
-.nav-bar{
-    display: flex;
-    align-items: center;
-    color: white;
-    background-color: rgba(37, 37, 37, 0);
-    font-family: 'Poppins', sans-serif;
-    padding: 1.8em 3em;
-}
-
-.nav-bar h1{
-    margin-right: auto;
-}
-
-.nav-bar a{
-    padding: 0px 1em;
-    transition: .15s ease;
-}
-
-.nav-bar a:hover{
-    text-decoration: underline; 
-    cursor: pointer;
-}
 
 
 .hero-container{
@@ -33,7 +11,7 @@
 }
 
 .hero-container h1{
-    font-size: 3.4rem;
+    font-size: 3.4rem;  
 }
 
 .hero-container h1:first-of-type{
@@ -63,6 +41,13 @@
     transition: .15s ease;
 }
 
+.hero-container button:first-of-type:hover{
+    cursor: pointer;
+    background-color: #847a57;
+    color: white;
+}
+
+
 .hero-container button:last-of-type{
     border: none;
     padding: 1rem 2.5rem;
@@ -74,10 +59,11 @@
     margin-top: 2em;
 }
 
-.hero-container button:first-of-type:hover{
+
+.hero-container button:last-of-type:hover{
     cursor: pointer;
-    background-color: #847a57;
-    color: white;
 }
+
+
 
 

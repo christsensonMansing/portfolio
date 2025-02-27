@@ -6,23 +6,25 @@
   color: white;
   font-family: 'Poppins', sans-serif;
   width: 80%; 
-  max-width: 50%; /* Prevent it from stretching too much */
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 5em;
 }
 
 .image-container{
-  min-width: 35%;
+  min-width: 270px;
   max-height: fit-content;
   margin-right: 2.5em;
-  overflow: hidden; /* Hide the zoomed-in parts */
+  overflow: hidden; 
   display: inline-block;
   border-radius: 10px;
   border: 1.5px solid #c4b681;
 }
 
 .image-container img{
-  max-width: 100%;
+  width: 100%;
+  min-width: 270px;
+  min-height: 394px;
   padding: .5em;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
@@ -50,3 +52,34 @@ hr{
 .right-side p{
   line-height: 2.1em;
 }
+
+@media (max-width: 1690px) {
+  .container{
+    max-width: 2000px;
+  }
+
+  .right-side {
+    padding-top: 0px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container{
+    padding-top: 0px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-container{
+    max-width: fit-content;
+    margin-right: 0px;
+  }
+
+  .image-container img{
+    min-height: 30px;
+    width: 270px;
+  }
+}
+

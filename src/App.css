@@ -6,10 +6,9 @@
 
 body{
   background-image: url('./assets/background.avif');
-
 }
 
 #root{
   background-color: rgba(0, 0, 0, 0.735);
-  height: 100vh !important;
+  min-height: 100vh !important;
 }

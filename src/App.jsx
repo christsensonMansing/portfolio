@@ -11,6 +11,12 @@ import BSP from "./pages/BSP.jsx";
 import Hytec from "./pages/Hytec.jsx";
 import MMDA from "./pages/MMDA.jsx";
 import LRT from "./pages/LRT.jsx";
+import Certifications from "./pages/Certifications.jsx";
+import Frontend from "./pages/Frontend.jsx";
+import Backend from "./pages/Backend.jsx";
+import DataScience from "./pages/DataScience.jsx";
+import Cloud from "./pages/Cloud.jsx";
+import Git from "./pages/Git.jsx";
 
 function App() {
   return (
@@ -22,11 +28,17 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/sbma" element={<SBMA />} />
         <Route path="/national-museum" element={<NationalMuseum />} />
-        <Route path="/quezon-memorial-circle" element={<QMC/>} />
-        <Route path="/bangko-sentral" element={<BSP/>} />
-        <Route path="/hytec" element={<Hytec/>} />
-        <Route path="/mmda" element={<MMDA/>} />
-        <Route path="/lrt" element={<LRT/>} />
+        <Route path="/quezon-memorial-circle" element={<QMC />} />
+        <Route path="/bangko-sentral" element={<BSP />} />
+        <Route path="/hytec" element={<Hytec />} />
+        <Route path="/mmda" element={<MMDA />} />
+        <Route path="/lrt" element={<LRT />} />
+        <Route path="/certifications" element={<Certifications />} />
+        <Route path="/front-end" element={<Frontend />} />
+        <Route path="/back-end" element={<Backend />} />
+        <Route path="/data-science" element={<DataScience />} />
+        <Route path="/cloud" element={<Cloud />} />
+        <Route path="/git" element={<Git />} />
       </Routes>
     </>
   );

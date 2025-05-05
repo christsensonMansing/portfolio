@@ -1,60 +1,123 @@
-
-
-.container{
+.container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   color: white;
-  font-family: 'Poppins', sans-serif;
-  width: 80%; 
+  font-family: "Poppins", sans-serif;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 5em;
 }
 
-.image-container{
+.image-container {
   min-width: 270px;
   max-height: fit-content;
   margin-right: 2.5em;
-  overflow: hidden; 
+  overflow: hidden;
   display: inline-block;
   border-radius: 10px;
   border: 1.5px solid #c4b681;
 }
 
-.image-container img{
+.image-container img {
   width: 100%;
   min-width: 270px;
-  min-height: 394px;
-  padding: .5em;
+  height: 400px;
+  padding: 0.5em;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
-.container img:hover{
+.container img:hover {
   transform: scale(1.093);
   cursor: pointer;
 }
 
-.right-side{
-  padding-top: 2em;
+
+
+h1 span {
+  color: #ff5353;
 }
 
-h1 span{
-  color: red  ;
-}
-
-hr{
+hr {
   border: 1.5px solid #7e7452;
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-bottom: 1em;
 }
 
-.right-side p{
+.right-side p {
   line-height: 2.1em;
 }
 
+.about-me-card {
+  border: 1px solid #7e7452;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.about-me-card div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+.about-me-card div:last-of-type {
+  margin-bottom: 0px;
+}
+
+.about-me-card div img {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.13s ease-in-out;
+}
+
+.tech-stack {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #7e7452;
+  border-radius: 10px;
+  gap: 1em 2em;
+
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background-color: #3b3727;
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+  box-shadow: 0 8px 15px #7e7452;
+}
+
+.skill-card img {
+  height: 40px;
+}
+
 @media (max-width: 1690px) {
-  .container{
+  .container {
     max-width: 2000px;
   }
 
@@ -63,23 +126,35 @@ hr{
   }
 }
 
-
 @media (max-width: 768px) {
-  .container{
+  .container {
     padding-top: 0px;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .image-container{
+  .image-container {
     max-width: fit-content;
     margin-right: 0px;
   }
 
-  .image-container img{
+  .image-container img {
     min-height: 30px;
     width: 270px;
   }
-}
 
+  .skills-container {
+    justify-content: center;
+  }
+
+  .skills-container {
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .skill-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}

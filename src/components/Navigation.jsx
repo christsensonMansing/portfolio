@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import burger from '../assets/burger.svg';
 import close from '../assets/close.svg';
@@ -32,9 +32,8 @@ const Navigation = () => {
         <a className='website-name' href="/"><h1>Mansing.<span className='name'>co</span></h1></a>
         <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
         <NavLink to="/about-me" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Me</NavLink>
-        <a>Projects</a>
-        <a>Skills</a>
-        <a>Contacts</a>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Projects</NavLink>
+        <NavLink to="/blog" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Blog</NavLink>
         <img className='burger-icon' src={burger} alt="" />
       </nav>
 
@@ -42,8 +41,8 @@ const Navigation = () => {
         <img className='close-icon' src={close} alt="" />
         <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
         <NavLink to="/about-me" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Me</NavLink>
-        <a>Projects</a>
-        <a>Skills</a>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Projects</NavLink>
+        <NavLink to="/blog" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Blog</NavLink>
       </div>
     </div>
   );

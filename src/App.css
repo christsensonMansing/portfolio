@@ -2,13 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-  background-image: url('./assets/background.avif');
+body {
+  background-image: url("./assets/background.avif");
+  height: 100%;
 }
 
-#root{
+#root {
   background-color: rgba(0, 0, 0, 0.735);
   min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  flex: 1;
 }

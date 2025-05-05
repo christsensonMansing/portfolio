@@ -34,6 +34,7 @@ const Navigation = () => {
         <NavLink to="/about-me" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Me</NavLink>
         <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Projects</NavLink>
         <NavLink to="/blog" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Blog</NavLink>
+        <NavLink to="/certifications" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Certifications</NavLink>
         <img className='burger-icon' src={burger} alt="" />
       </nav>
 
@@ -43,6 +44,7 @@ const Navigation = () => {
         <NavLink to="/about-me" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Me</NavLink>
         <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Projects</NavLink>
         <NavLink to="/blog" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Blog</NavLink>
+        <NavLink to="/certifications" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Certifications</NavLink>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="main-container">
         <div className="projects-container">
           <h1>
-            Pro<span>jects</span>
+            Website <span>Projects</span>
           </h1>
           <p className="projects-description">
             A collection of web apps and tools I&apos;ve built — showcasing my

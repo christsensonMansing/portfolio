@@ -3,7 +3,7 @@ import hero from "../assets/about-me-pic.jpg";
 import Navigation from "../components/Navigation.jsx";
 import location from "../assets/location.svg";
 import graduation from "../assets/graduation.svg";
-import job from "../assets/job.svg";
+// import job from "../assets/job.svg";
 import phone from "../assets/phone.svg";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
@@ -32,9 +32,10 @@ const AboutMe = () => {
             </h1>
             <hr />
             <p>
-              A website developer that enjoys building reliable websites and
-              tackling problems with smart code solutions. Let&apos;s make
-              something happen!
+              Enthusiastic and determined recent IT graduate seeking an
+              entry-level role as a QA Software Tester. Passionate about
+              ensuring product quality, quick to learn, and eager to contribute
+              meaningfully to a fast-paced development team.
             </p>
             <div className="about-me-card">
               <div className="">
@@ -48,14 +49,6 @@ const AboutMe = () => {
               <div className="">
                 <img src={phone} alt="" />
                 +63 936-790-4376
-              </div>
-              <div className="">
-                <img src={job} alt="" />
-                InnovateSphere Technologies
-              </div>
-              <div className="">
-                <h1>2+</h1>
-                Years of software development
               </div>
             </div>
           </div>
@@ -102,7 +95,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

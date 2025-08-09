@@ -3,10 +3,12 @@
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
   color: white;
   padding-inline: 5em;
   flex: 1;
+  text-align: center;
 }
 
 .hero-container h1 {
@@ -87,6 +89,10 @@
 
   .hero-container h1:first-of-type {
     display: none;
+  }
+
+  .name{
+    color: red;
   }
 
   .hero-img {

@@ -1,50 +1,124 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import burger from '../assets/burger.svg';
-import close from '../assets/close.svg';
-import '../assets/styles/nav.css';
+import burger from "../assets/burger.svg";
+import close from "../assets/close.svg";
+import "../assets/styles/nav.css";
 
 const Navigation = () => {
   useEffect(() => {
-    const burgerIcon = document.querySelector('.burger-icon');
-    const closeIcon = document.querySelector('.close-icon');
-    const nav = document.querySelector('.responsive-nav');
+    const burgerIcon = document.querySelector(".burger-icon");
+    const closeIcon = document.querySelector(".close-icon");
+    const nav = document.querySelector(".responsive-nav");
 
     if (burgerIcon && nav) {
       const toggleNav = () => {
-        nav.classList.toggle('show'); 
-        burgerIcon.classList.toggle('hide')
+        nav.classList.toggle("show");
+        burgerIcon.classList.toggle("hide");
       };
 
-      burgerIcon.addEventListener('click', toggleNav);
-      closeIcon.addEventListener('click', toggleNav);
+      burgerIcon.addEventListener("click", toggleNav);
+      closeIcon.addEventListener("click", toggleNav);
 
       return () => {
-        burgerIcon.removeEventListener('click', toggleNav);
-        closeIcon.removeEventListener('click', toggleNav);
+        burgerIcon.removeEventListener("click", toggleNav);
+        closeIcon.removeEventListener("click", toggleNav);
       };
     }
-  }, []); 
+  }, []);
 
   return (
-    <div className='nav-container'>
-      <nav className='nav-bar'>
-        <a className='website-name' href="/"><h1>Mansing.<span className='name'>co</span></h1></a>
-        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
-        <NavLink to="/about-me" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Me</NavLink>
-        <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Projects</NavLink>
-        <NavLink to="/blog" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Blog</NavLink>
-        <NavLink to="/certifications" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Certifications</NavLink>
-        <img className='burger-icon' src={burger} alt="" />
+    <div className="nav-container">
+      <nav className="nav-bar">
+        <a className="website-name" href="/">
+          <h1>
+            Mansing.<span className="name">co</span>
+          </h1>
+        </a>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about-me"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          About Me
+        </NavLink>
+        <NavLink
+          to="/web-projects"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Website Projects
+        </NavLink>
+        <NavLink
+          to="/software-testing-projects"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Software Testing Projects
+        </NavLink>
+        <NavLink
+          to="/certification"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Certification
+        </NavLink>
+        <img className="burger-icon" src={burger} alt="" />
       </nav>
 
       <div className="responsive-nav">
-        <img className='close-icon' src={close} alt="" />
-        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
-        <NavLink to="/about-me" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Me</NavLink>
-        <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Projects</NavLink>
-        <NavLink to="/blog" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Blog</NavLink>
-        <NavLink to="/certifications" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Certifications</NavLink>
+        <img className="close-icon" src={close} alt="" />
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about-me"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          About Me
+        </NavLink>
+        <NavLink
+          to="/web-projects"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Website Projects
+        </NavLink>
+        <NavLink
+          to="/software-testing-projects"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Software Testing Projects
+        </NavLink>
+        <NavLink
+          to="/certification"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Certification
+        </NavLink>
       </div>
     </div>
   );

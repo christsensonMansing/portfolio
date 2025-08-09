@@ -2,7 +2,8 @@ import "./App.css";
 import AboutMe from "./pages/AboutMe.jsx";
 import Blog from "./pages/Blog.jsx";
 import Hero from "./pages/Hero.jsx";
-import Projects from "./pages/Projects.jsx";
+import WebProjects from "./pages/WebsiteProjects.jsx";
+import TestingProjects from "./pages/SoftwareTestingProjects.jsx";
 import { Routes, Route } from "react-router-dom";
 import SBMA from "./pages/SBMA.jsx";
 import NationalMuseum from "./pages/NationalMuseum.jsx";
@@ -11,8 +12,8 @@ import BSP from "./pages/BSP.jsx";
 import Hytec from "./pages/Hytec.jsx";
 import MMDA from "./pages/MMDA.jsx";
 import LRT from "./pages/LRT.jsx";
-import Certifications from "./pages/Certifications.jsx";
-import Frontend from "./pages/Frontend.jsx";
+import Certification from "./pages/Certification.jsx";
+import Frontend from "./pages/Certification.jsx";
 import Backend from "./pages/Backend.jsx";
 import DataScience from "./pages/DataScience.jsx";
 import Cloud from "./pages/Cloud.jsx";
@@ -24,7 +25,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/web-projects" element={<WebProjects />} />
+        <Route
+          path="/software-testing-projects"
+          element={<TestingProjects />}
+        />
         <Route path="/blog" element={<Blog />} />
         <Route path="/sbma" element={<SBMA />} />
         <Route path="/national-museum" element={<NationalMuseum />} />
@@ -33,7 +38,7 @@ function App() {
         <Route path="/hytec" element={<Hytec />} />
         <Route path="/mmda" element={<MMDA />} />
         <Route path="/lrt" element={<LRT />} />
-        <Route path="/certifications" element={<Certifications />} />
+        <Route path="/certification" element={<Certification />} />
         <Route path="/front-end" element={<Frontend />} />
         <Route path="/back-end" element={<Backend />} />
         <Route path="/data-science" element={<DataScience />} />

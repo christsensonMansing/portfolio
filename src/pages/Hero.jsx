@@ -22,7 +22,7 @@ function Hero() {
               work, tech skills, and certifications—all things I&apos;m
               passionate about.
             </p>
-            <a href="/projects">
+            <a href="/web-projects">
               <button className="see-projects-btn">See projects</button>
             </a>
             <a href="../assets/Mansing-CV.pdf" download>

@@ -25,8 +25,12 @@ function Hero() {
             <a href="/web-projects">
               <button className="see-projects-btn">See projects</button>
             </a>
-            <a href="../assets/Mansing-CV.pdf" download>
-              <button className="work-with-me-btn">Download CV</button>
+            <a
+              href="https://drive.google.com/file/d/1POutxx3CvEw2Pb-rFSmARykvHCc7c-9k/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="work-with-me-btn">View CV</button>
             </a>
           </div>
         </div>

@@ -30,7 +30,7 @@ export default function Projects() {
               </h3>
               <p>
                 Developed test scenarios and test cases using Trello and Google
-                Sheets for the major modules of Udemt as part of a comprehensive
+                Sheets for the major modules of Udemy as part of a comprehensive
                 software testing course, focusing on identifying functional
                 requirements and ensuring thorough coverage for quality
                 assurance.

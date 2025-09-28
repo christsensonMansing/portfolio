@@ -44,9 +44,14 @@ export default function Projects() {
                   <p>React.js</p>
                 </div>
                 <div className="right-footer">
-                  <button>
-                    <img src={githubIcon} alt="" />
-                  </button>
+                  <a
+                    href="https://github.com/christsensonMansing/todo-app-json-server.git"
+                    target="blank"
+                  >
+                    <button>
+                      <img src={githubIcon} alt="" />
+                    </button>
+                  </a>
                   <a
                     href="https://todo-app-mansing.netlify.app"
                     target="_blank"

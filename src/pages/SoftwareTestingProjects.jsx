@@ -2,6 +2,8 @@ import Navigation from "../components/Navigation.jsx";
 import "../assets/styles/projects.css";
 import udemy from "../assets/project-imgs/udemy.png";
 import trello from "../assets/project-imgs/trello.webp";
+import swagLabs from "../assets/project-imgs/swag-labs.png";
+import githubIcon from "../assets/github.svg";
 import Footer from "../components/Footer.jsx";
 
 export default function Projects() {
@@ -81,6 +83,38 @@ export default function Projects() {
                     target="_blank"
                   >
                     <button>Postman Collection &gt;</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <div className="img-wrapper">
+              <img src={swagLabs} alt="" />
+            </div>
+            <div className="details">
+              <h3>
+                <span>Swag Labs</span> Automation Testing with Playwright
+              </h3>
+              <p>
+                Performed basic functional testing on Trello&apos;s API using
+                Postman to verify endpoints, validate responses, and ensure
+                correct data handling as part of hands-on API testing practice.
+              </p>
+              <div className="project-footer">
+                <div className="tech-stack">
+                  <p>Playwright</p>
+                  <p>JavaScript</p>
+                </div>
+                <div className="right-footer">
+                  <a
+                    href="https://github.com/christsensonMansing/swag-labs-playwright"
+                    target="blank"
+                  >
+                    <button>
+                      <img src={githubIcon} alt="" />
+                    </button>
                   </a>
                 </div>
               </div>

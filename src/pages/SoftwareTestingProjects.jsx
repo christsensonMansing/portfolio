@@ -98,9 +98,7 @@ export default function Projects() {
                 <span>Swag Labs</span> Automation Testing with Playwright
               </h3>
               <p>
-                Performed basic functional testing on Trello&apos;s API using
-                Postman to verify endpoints, validate responses, and ensure
-                correct data handling as part of hands-on API testing practice.
+                Built automated end-to-end test scripts for the Swag Labs demo application using Playwright with JavaScript and a Page Object Model (POM) structure, covering login, product browsing, cart, and checkout workflows to validate functionality and ensure a smooth user experience.
               </p>
               <div className="project-footer">
                 <div className="tech-stack">

@@ -1,6 +1,5 @@
 import Navigation from "../components/Navigation.jsx";
 import "../assets/styles/projects.css";
-import todoAppImg from "../assets/project-imgs/todo-app.png";
 import pokedex from "../assets/project-imgs/pokedex.png";
 import cinemaImg from "../assets/project-imgs/cinema-booking.png";
 import coffeStationImg from "../assets/project-imgs/coffee-station.jpg";
@@ -23,45 +22,6 @@ export default function Projects() {
             skills in frontend development, UI design, and problem-solving. Each
             project reflects a step forward in my learning journey.
           </p>
-
-          <div className="project-card">
-            <div className="img-wrapper">
-              <img src={todoAppImg} alt="" />
-            </div>
-            <div className="details">
-              <h3>
-                Todo <span>app</span>
-              </h3>
-              <p>
-                A simple and responsive task manager that lets users add,
-                complete, and organize their daily tasks. Built to boost
-                productivity with a clean and intuitive interface.
-              </p>
-              <div className="project-footer">
-                <div className="tech-stack">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>React.js</p>
-                </div>
-                <div className="right-footer">
-                  <a
-                    href="https://github.com/christsensonMansing/todo-app-json-server.git"
-                    target="blank"
-                  >
-                    <button>
-                      <img src={githubIcon} alt="" />
-                    </button>
-                  </a>
-                  <a
-                    href="https://todo-app-mansing.netlify.app"
-                    target="_blank"
-                  >
-                    <button>Live demo</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div className="project-card">
             <div className="img-wrapper">

@@ -14,6 +14,11 @@ import django from "../assets/django.svg";
 import react from "../assets/react.svg";
 import figma from "../assets/figma.svg";
 import mysql from "../assets/mysql.svg";
+import jira from "../assets/jira.svg";
+import trello from "../assets/trello.svg";
+import playwright from "../assets/playwright.svg";
+import git from "../assets/git.svg";
+import github from "../assets/github.svg";
 import Footer from "../components/Footer.jsx";
 
 const AboutMe = () => {
@@ -92,6 +97,30 @@ const AboutMe = () => {
           <div className="skill-card">
             <img src={mysql} alt="" />
             <p>MySQL</p>
+          </div>
+          <div className="skill-card">
+            <img src={jira} alt="" />
+            <p>Jira</p>
+          </div>
+          <div className="skill-card">
+            <img src={mysql} alt="" />
+            <p>MySQL</p>
+          </div>
+          <div className="skill-card">
+            <img src={trello} alt="" />
+            <p>Trello</p>
+          </div>
+          <div className="skill-card">
+            <img src={playwright} alt="" />
+            <p>Playwright</p>
+          </div>
+          <div className="skill-card">
+            <img src={git} alt="" />
+            <p>Git</p>
+          </div>
+          <div className="skill-card">
+            <img src={github} alt="" />
+            <p>Github</p>
           </div>
         </div>
       </div>

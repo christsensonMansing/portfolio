@@ -52,9 +52,9 @@ export default function Projects() {
                       <img src={githubIcon} alt="" />
                     </button>
                   </a>
-                  <a href="https://pokedex-rivero.netlify.app" target="_blank">
+                  {/* <a href="https://pokedex-rivero.netlify.app" target="_blank">
                     <button>Live demo</button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

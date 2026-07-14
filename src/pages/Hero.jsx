@@ -26,7 +26,7 @@ function Hero() {
               <button className="see-projects-btn">See projects</button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1POutxx3CvEw2Pb-rFSmARykvHCc7c-9k/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DhQrsqbYpCQIqpyJXIbtiSB7bFeHYgjc/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
